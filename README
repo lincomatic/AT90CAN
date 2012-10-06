@@ -14,6 +14,11 @@ or
 
 [JTAG ICE mk1]AT90CAN128
 
+Set your fuses with avrdude:
+avrdude -c usbtiny -p at90can128  -U lfuse:w:0xFF:m
+avrdude -c usbtiny -p at90can128  -U hfuse:w:0x19:m
+avrdude -c usbtiny -p at90can128  -U efuse:w:0xFF:m
+
 For Arduino pin mappings, see AT90CAN_Pinmap.txt
 
 
