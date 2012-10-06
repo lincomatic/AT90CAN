@@ -21,5 +21,7 @@ avrdude -c usbtiny -p at90can128  -U efuse:w:0xFF:m
 
 For Arduino pin mappings, see AT90CAN_Pinmap.txt
 
+For more information, see http://blog.lincomatic.com/?tag=can-bus
+
 
 
