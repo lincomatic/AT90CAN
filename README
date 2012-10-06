@@ -1,0 +1,20 @@
+AT90CAN Support for Arduino
+Maintainer: Sam C. Lin <lincomatic@hotmail.com>
+
+Compile Arduino sketches on Atmel AT90CANxx MCU's.
+Supports USBtinyISP and JTAG ICE mk1
+
+Copy the at90can folder to <arduino>/hardware/at90can
+
+From the Arduino IDE's Tools->Board menu, select either
+
+[usbtinyisp]AT90CAN128
+
+or
+
+[JTAG ICE mk1]AT90CAN128
+
+For Arduino pin mappings, see AT90CAN_Pinmap.txt
+
+
+
