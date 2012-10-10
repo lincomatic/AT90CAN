@@ -2,7 +2,7 @@
 
 uat90can128.name=[usbtinyisp]AT90CAN128
 uat90can128.upload.using=usbtinyisp
-uat90can128.upload.maximum_size=126976
+uat90can128.upload.maximum_size=131072
 
 
 uat90can128.build.mcu=at90can128
@@ -13,7 +13,7 @@ uat90can128.build.core=at90can
 
 jat90can128.name=[JTAG ICE mkI]AT90CAN128
 jat90can128.upload.using=jtagicemki
-jat90can128.upload.maximum_size=126976
+jat90can128.upload.maximum_size=131072
 
 jat90can128.bootloader.low_fuses=0xFF
 jat90can128.bootloader.high_fuses=0x1A
@@ -26,23 +26,3 @@ jat90can128.bootloader.lock_bits=0xCF
 jat90can128.build.mcu=at90can128
 jat90can128.build.f_cpu=16000000L
 jat90can128.build.core=at90can
-
-##############################################################
-
-at90can128.name=AT90CAN128 development board NHL
-at90can128.upload.protocol=stk500
-at90can128.upload.maximum_size=126976
-at90can128.upload.speed=57600
-
-at90can128.bootloader.low_fuses=0xFF
-at90can128.bootloader.high_fuses=0x1A
-at90can128.bootloader.extended_fuses=0xF5
-at90can128.bootloader.path=at90can
-at90can128.bootloader.file=ATmegaBOOT_168_at90can.hex
-at90can128.bootloader.unlock_bits=0x3F
-at90can128.bootloader.lock_bits=0xCF
-
-at90can128.build.mcu=at90can128
-at90can128.build.f_cpu=16000000L
-at90can128.build.core=at90can
-

@@ -45,6 +45,9 @@ const static uint8_t MOSI = 10; // PB2
 const static uint8_t MISO = 11; // PB3
 const static uint8_t SCK =   9; // PB1
 
+static const uint8_t SDA = 25; // PD1
+static const uint8_t SCL = 24; // PD0
+
 // On the ATmega1280, the addresses of some of the port registers are
 // greater than 255, so we can't store them in uint8_t's.
 extern const uint16_t PROGMEM port_to_mode_PGM[];
