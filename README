@@ -4,7 +4,8 @@ Maintainer: Sam C. Lin <lincomatic@hotmail.com>
 Compile Arduino sketches on Atmel AT90CANxx MCU's.
 Supports USBtinyISP and JTAG ICE mk1
 
-Copy the at90can folder to <arduino>/hardware/at90can
+For Arduino <= 0023: copy the 0023/at90can folder to <arduino>/hardware/at90can
+For Arduino >= 1.0: copy the 1.0/at90can folder to <arduino>/hardware/at90can
 
 From the Arduino IDE's Tools->Board menu, select either
 
