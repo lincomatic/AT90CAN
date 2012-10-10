@@ -1,6 +1,8 @@
 AT90CAN Support for Arduino
 Maintainer: Sam C. Lin <lincomatic@hotmail.com>
 
+This is a continuation of SuperCow's work on adapting Arduino to work with AT90CANxx MCU's at http://arduino.cc/forum/index.php/topic,8446.0.html
+
 Compile Arduino sketches on Atmel AT90CANxx MCU's.
 Supports USBtinyISP and JTAG ICE mk1
 
