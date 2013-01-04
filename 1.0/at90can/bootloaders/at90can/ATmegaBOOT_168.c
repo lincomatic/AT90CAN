@@ -288,6 +288,9 @@ int main(void)
 	BL_PORT |= _BV(BL1);
 
 
+#if defined __AVR_AT90CAN128__ // scl
+	bootuart=1;
+#else
 /* Edit Roland Wiersma 14/10/09 */
 //#ifdef __AVR_ATmega128__
 	/* check which UART should be used for booting */
@@ -298,6 +301,7 @@ int main(void)
 		bootuart = 2;
 	}
 //#endif
+#endif
 
 #if defined __AVR_ATmega1280__
 	/* the mega1280 chip has four serial ports ... we could eventually use any of them, or not? */
@@ -720,6 +724,8 @@ int main(void)
 			welcome = "ATmegaBOOT / Savvy128 - (C) J.P.Kyle, E.Lins - 050815\n\r";
 #elif defined __AVR_ATmega1280__ 
 			welcome = "ATmegaBOOT / Arduino Mega - (C) Arduino LLC - 090930\n\r";
+#elif defined __AVR_AT90CAN128__ // scl
+			welcome = "ATmegaBOOT / AT90CAN128 - (C) Arduino LLC - 090930\n\r"; //scl
 #endif
 
 			/* turn on LED */

@@ -22,9 +22,23 @@ avrdude -c usbtiny -p at90can128  -U lfuse:w:0xFF:m
 avrdude -c usbtiny -p at90can128  -U hfuse:w:0x19:m
 avrdude -c usbtiny -p at90can128  -U efuse:w:0xFF:m
 
+To install bootloader for programming over serial, you must set in hfuse BOOTSZ=10 and BOOTRST=0. Use the following fuse settings:
+avrdude -c usbtiny -p at90can128  -U lfuse:w:0xFF:m
+avrdude -c usbtiny -p at90can128  -U hfuse:w:0x1C:m
+avrdude -c usbtiny -p at90can128  -U efuse:w:0xFF:m
+You will also need to set up the automatic reset circuit to use DTR to toggle the RESET pin:  DTR---|100nF|--<RESET>--|1n4148>|--VCC
+Select [bootloader]AT90CAN128 board type in Arduino IDE and burn the bootloader.
+Thereafter, you can burn sketches without a hardware programmer via UART1 (RXD0/TXD0) by selecting board type [bootloader]AT90CAN128.
+
+
 For Arduino pin mappings, see AT90CAN_Pinmap.txt
 
 For more information, see http://blog.lincomatic.com/?tag=can-bus
+
+----------------
+ChangeLog
+20130104 SCL
+- get bootloader working. Thanks to a4x4kiwi for help
 
 
 

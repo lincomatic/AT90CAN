@@ -200,7 +200,7 @@ at90can: TARGET = at90can128
 at90can: MCU_TARGET = at90can128
 at90can: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=1' -DBAUD_RATE=57600
 at90can: AVR_FREQ = 16000000L 
-at90can: LDSECTION  = --section-start=.text=0x1F000
+at90can: LDSECTION  = --section-start=.text=0x1F800
 at90can: $(PROGRAM)_at90can.hex
 
 
@@ -230,4 +230,3 @@ clean:
 
 %.bin: %.elf
 	$(OBJCOPY) -j .text -j .data -O binary $< $@
-	
