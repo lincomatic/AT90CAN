@@ -28,7 +28,7 @@ avrdude -c usbtiny -p at90can128  -U hfuse:w:0x1C:m
 avrdude -c usbtiny -p at90can128  -U efuse:w:0xFF:m
 You will also need to set up the automatic reset circuit to use DTR to toggle the RESET pin:  DTR---|100nF|--<RESET>--|1n4148>|--VCC
 Select [bootloader]AT90CAN128 board type in Arduino IDE and burn the bootloader.
-Thereafter, you can burn sketches without a hardware programmer via UART1 (RXD0/TXD0) by selecting board type [bootloader]AT90CAN128.
+Thereafter, you can burn sketches without a hardware programmer via USART0 (RXD0/TXD0) by selecting board type [bootloader]AT90CAN128.
 
 
 For Arduino pin mappings, see AT90CAN_Pinmap.txt
