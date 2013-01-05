@@ -9,7 +9,7 @@ at90can128.bootloader.extended_fuses=0xFF
 at90can128.bootloader.path=at90can
 at90can128.bootloader.file=ATmegaBOOT_168_at90can.hex
 at90can128.bootloader.unlock_bits=0x3F
-at90can128.bootloader.lock_bits=0xCF
+at90can128.bootloader.lock_bits=0x0F
 
 at90can128.build.mcu=at90can128
 at90can128.build.f_cpu=16000000L

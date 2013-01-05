@@ -39,6 +39,8 @@ For more information, see http://blog.lincomatic.com/?tag=can-bus
 ChangeLog
 20130104 SCL
 - get bootloader working. Thanks to a4x4kiwi for help
+- changed lock bits when locked from CF to 0F because even though AT90CAN128
+  datasheet shows top 2 bits fixed = 1, avrdude always reads back 0's.
 
 
 
